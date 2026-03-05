@@ -1,3 +1,5 @@
 {
-  "item.scrapfactory.scrap": "Scrap"
+  "item.scrapfactory.scrap": "Scrap",
+  "block.scrapfactory.debris": "Debris",
+  "creativetab.scrapfactory": "Scrap Factory"
 }

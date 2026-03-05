@@ -7,7 +7,9 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import nyeptos.scrapfactory.general.ModCreativeModeTab;
+import nyeptos.scrapfactory.block.ModBlocks;
+import nyeptos.scrapfactory.event.ScrapEventHandler;
+import nyeptos.scrapfactory.item.ModCreativeModeTab;
 import nyeptos.scrapfactory.item.ModItems;
 import org.slf4j.Logger;
 
@@ -24,8 +26,9 @@ public class ScrapFactory {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
         ModCreativeModeTab.register(modEventBus);
-        MinecraftForge.EVENT_BUS.register(this);
+        MinecraftForge.EVENT_BUS.register(ScrapEventHandler.class);
     }
 
     @SubscribeEvent
