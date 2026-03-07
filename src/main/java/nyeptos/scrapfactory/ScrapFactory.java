@@ -7,10 +7,11 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import nyeptos.scrapfactory.block.ModBlocks;
+import nyeptos.scrapfactory.registry.ModBlocks;
+import nyeptos.scrapfactory.registry.ModBlockEntities;
 import nyeptos.scrapfactory.event.ScrapEventHandler;
-import nyeptos.scrapfactory.item.ModCreativeModeTab;
-import nyeptos.scrapfactory.item.ModItems;
+import nyeptos.scrapfactory.registry.ModCreativeModeTab;
+import nyeptos.scrapfactory.registry.ModItems;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -27,6 +28,7 @@ public class ScrapFactory {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
         ModCreativeModeTab.register(modEventBus);
         MinecraftForge.EVENT_BUS.register(ScrapEventHandler.class);
     }

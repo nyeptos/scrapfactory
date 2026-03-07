@@ -7,8 +7,7 @@ import net.minecraft.world.item.TieredItem;
 import net.minecraft.world.item.Tiers;
 import net.minecraftforge.event.entity.player.PlayerDestroyItemEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
-import nyeptos.scrapfactory.item.ModItems;
+import nyeptos.scrapfactory.registry.ModItems;
 
 public class ScrapEventHandler {
 

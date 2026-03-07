@@ -1,4 +1,4 @@
-package nyeptos.scrapfactory.item;
+package nyeptos.scrapfactory.registry;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -8,7 +8,6 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import nyeptos.scrapfactory.ScrapFactory;
-import nyeptos.scrapfactory.block.ModBlocks;
 
 public class ModCreativeModeTab {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, ScrapFactory.MODID);

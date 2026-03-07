@@ -1,4 +1,4 @@
-package nyeptos.scrapfactory.item;
+package nyeptos.scrapfactory.registry;
 
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
